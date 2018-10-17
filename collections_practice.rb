@@ -21,7 +21,8 @@ end
 #4 swap_elements takes array arg
 # swaps second & third elements
 def swap_elements(array)
-  array[1..2] = array[1..2].sort
+  array[1], array[2] = array[2], array[1]
+  array
 end
 
 #4_adv swap_elements_from_to
@@ -57,11 +58,22 @@ end
 
 #9 add_s adds "s" to each word in array
 # except for second element ("feet" is already plural).
-def add_s(words)
+=begin def add_s(words)
   plural_words = []
       words.each.collect do |w|
       plural_words << w + "s"
       end
     plural_words[1] = "feet"
     plural_words
+end
+=end
+def add_s(words)
+      words.collect.with_index do |w, i|
+        #binding.pry
+        if i != 1
+          w + "s"
+        else
+          w
+        end
+      end
 end
