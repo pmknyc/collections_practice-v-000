@@ -1,5 +1,5 @@
 require 'pry'
-<<<<<<< HEAD
+
 #1 sort_array_asc takes in array of integers
 # returns copy of array with integers in AScending order.
 def sort_array_asc(nums)
@@ -37,16 +37,14 @@ end
 # returns a copy of array with elements in reverse order
 def reverse_array(nums)
   nums.sort.reverse
-=======
+
 
 # words = ["hand", "feet", "knee", "table"]
 plural_words = []
 def add_s(words)
       words.each.collect do |w|
       w + "s"
-binding.pry
     end
->>>>>>> b2db5d5095b3406325333f4c081cdc5adf0bb867
 end
 
 #6 kesha_maker takes array of strings
@@ -76,22 +74,12 @@ end
 
 #9 add_s adds "s" to each word in array
 # except for second element ("feet" is already plural).
-=begin def add_s(words)
-  plural_words = []
-      words.each.collect do |w|
-      plural_words << w + "s"
-      end
-    plural_words[1] = "feet"
-    plural_words
-end
-=end
 def add_s(words)
-      words.collect.with_index do |w, i|
-        #binding.pry
-        if i != 1
-          w + "s"
-        else
-          w
-        end
-      end
+  words.collect.with_index do |w, i|
+    if i != 1
+      w + "s"
+    else
+      w
+    end
+  end
 end
