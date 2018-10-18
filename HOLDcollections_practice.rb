@@ -1,7 +1,21 @@
 require 'pry'
+<<<<<<< HEAD
 #1 sort_array_asc takes in array of integers
 # returns copy of array with integers in AScending order.
 
+=======
+
+words = ["hand", "feet", "knee", "table"]
+def add_s(words)
+    words.each_with_index.collect do |w, i|
+      w + "s" if i != 1
+      end
+end
+
+=begin
+#1 sort_array_asc takes in array of integers
+# returns copy of array with integers in AScending order.
+>>>>>>> b2db5d5095b3406325333f4c081cdc5adf0bb867
 def sort_array_asc(nums)
   nums.sort
 end
@@ -41,9 +55,12 @@ end
 #6 kesha_maker takes array of strings
 # replaces third character in each string with a $ ("dollar sign")
 # Use .each method to iterate and build a new array to return at the end
+<<<<<<< HEAD
 def kesha_maker
 
 end
+=======
+>>>>>>> b2db5d5095b3406325333f4c081cdc5adf0bb867
 
 #7 find_a
 # returns all strings in array that start_with letter a
@@ -58,6 +75,7 @@ end
 
 #9 add_s adds "s" to each word in array
 # except for second element ("feet" is already plural).
+<<<<<<< HEAD
 def add_s(words)
   plural_words = []
       words.each.collect do |w|
@@ -66,3 +84,13 @@ def add_s(words)
     plural_words[1] = "feet"
     plural_words
 end
+=======
+words = ["hand", "feet", "knee", "table"]
+def add_s(words)
+    words.each_with_index.collect do |w, i|
+      w + "s" if i != 1
+      end
+    end
+end
+=end
+>>>>>>> b2db5d5095b3406325333f4c081cdc5adf0bb867
