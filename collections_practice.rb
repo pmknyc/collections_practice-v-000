@@ -37,14 +37,6 @@ end
 # returns a copy of array with elements in reverse order
 def reverse_array(nums)
   nums.sort.reverse
-
-
-# words = ["hand", "feet", "knee", "table"]
-plural_words = []
-def add_s(words)
-      words.each.collect do |w|
-      w + "s"
-    end
 end
 
 #6 kesha_maker takes array of strings
