@@ -1,4 +1,5 @@
 require 'pry'
+<<<<<<< HEAD
 #1 sort_array_asc takes in array of integers
 # returns copy of array with integers in AScending order.
 def sort_array_asc(nums)
@@ -36,14 +37,31 @@ end
 # returns a copy of array with elements in reverse order
 def reverse_array(nums)
   nums.sort.reverse
+=======
+
+# words = ["hand", "feet", "knee", "table"]
+plural_words = []
+def add_s(words)
+      words.each.collect do |w|
+      w + "s"
+binding.pry
+    end
+>>>>>>> b2db5d5095b3406325333f4c081cdc5adf0bb867
 end
 
 #6 kesha_maker takes array of strings
 # replaces third character in each string with a $ ("dollar sign")
 # Use .each method to iterate and build a new array to return at the end
-def kesha_maker
-
+def kesha_maker(strings)
+  strings.each do |string|
+    string.split('')
+  binding.pry
+    string[2] = "$"
+  binding.pry
+    #string.join
+  end
 end
+
 
 #7 find_a
 # returns all strings in array that start_with letter a
